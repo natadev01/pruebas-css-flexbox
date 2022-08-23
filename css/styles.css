@@ -1,0 +1,271 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* main */
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2em;
+    border-radius: 0.3em;
+    background-color: white;
+
+}
+.main-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Utilitaria */
+.container{
+    width: 80%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+.btn-primary {
+    color: white;
+    background-color: #0F2620;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #7BA69A;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #A6444C;
+}
+
+.btn-light {
+    color: black;
+    background-color: #DDF2CE;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #7D6858;
+}
+
+
+/* Header */
+.bg-header{
+    background-image: url('../assets/images/bg-header-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.bg-navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5em 0;
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   
+}
+
+.navbar-brand{
+    display:        flex;
+    flex-direction: column;
+    align-items:    center ;
+    color:         white;
+    font-size:      1.5rem;
+    text-decoration: none;
+    font-weight:    500;
+    margin-bottom:  1em;
+}
+@media (min-width: 768px){
+    .navbar-brand{
+        flex-direction: row;
+        margin-bottom: 0;
+        
+    }
+}
+
+.navbar-brand img{
+    width: 2em;
+}
+
+.navbar-nav{
+    background-color: rgba(0, 0, 0, 0.772);
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+.nav-link{
+    display: inline;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    padding: 0.3em;
+}
+@media (max-width: 400px){
+    
+    .nav-link{
+        font-size: 0.75rem;
+    }
+   
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+
+}
+
+/* shop */
+
+
+@media (min-width: 768px){
+    
+    .shop{
+        display: flex;
+        gap: 1em;
+        flex: 1 1 0;
+    }
+   
+}
+
+.card{
+
+    background: #A6444C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 1em;
+    
+}
+@media (min-width: 768px){
+    
+    .card{
+        min-width: 220px;
+    }
+   
+}
+
+.card-img{
+    width: 100%;
+}
+.card-body{
+    padding: 1rem;
+}
+.card-body h5{
+    font-size: 1.5rem;
+    margin: 1.5em 0;
+    font-weight: 400;
+}
+
+.card-body p{
+    font-weight: 200;
+}
+
+/* nosotros */
+.us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #7D6858;
+    
+}
+
+
+.us-col-img{
+    background-image: url('../assets/images/nosotros-min.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    order: 2;
+}
+
+
+.us-col-text{
+    order: 1; 
+}
+@media (min-width: 576px){
+    
+    .us-col-img{
+        height: 31.25em;
+    }
+}
+@media (min-width: 768px){
+    .us{
+        flex-direction: row;
+    }
+    .us-col-img{
+        order: 0;
+        flex: 1 1 0;
+    }
+    .us-col-text{
+        order: 2; 
+        flex: 1 1 0;
+
+    }
+    
+}
+.us-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.us-body h2{
+    text-transform: uppercase;
+}
+
+.us-body p{
+    font-weight: 200;
+}
+
+/* footer */
+
+.bg-footer{
+    background-color: #2D2C59;
+    color: white;
+}
+
+.bg-footer p {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* m-queries */
+
